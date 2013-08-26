@@ -9,16 +9,96 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
-    <GridView
-        android:id="@+id/gridView1"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:id="@+id/chessman1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:numColumns="3" >
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
 
-    </GridView>
+    <ImageButton
+        android:id="@+id/chessman2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chessman1"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/chessman1"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
+
+    <ImageButton
+        android:id="@+id/chessman5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chessman4"
+        android:layout_toLeftOf="@+id/chessman3"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
+
+    <ImageButton
+        android:id="@+id/chessman4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chessman1"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/chessman2"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
+
+    <ImageButton
+        android:id="@+id/chessman6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chessman3"
+        android:layout_alignTop="@+id/chessman5"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
+
+    <ImageButton
+        android:id="@+id/chessman3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chessman4"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/chessman2"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
+
+    <ImageButton
+        android:id="@+id/chessman7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chessman4"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/chessman2"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
+
+    <ImageButton
+        android:id="@+id/chessman8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chessman7"
+        android:layout_toLeftOf="@+id/chessman3"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
+
+    <ImageButton
+        android:id="@+id/chessman9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chessman6"
+        android:layout_alignTop="@+id/chessman8"
+        android:contentDescription="@string/todo"
+        android:src="@android:drawable/star_big_off" />
 
 </RelativeLayout>
