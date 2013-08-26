@@ -13,4 +13,12 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" >
+
+    </GridView>
+
 </RelativeLayout>
