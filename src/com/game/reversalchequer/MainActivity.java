@@ -8,15 +8,22 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.RDQA.bmi_calc.Main;
 import com.example.reversalchequer.R;
 
 public class MainActivity extends Activity
 {
-
+	private Button button_calculate;
+	private EditText field_weight;
+	private EditText field_height;
+	private TextView view_result_feet;
+	private TextView view_result_pound;
+	private Button button_about;
+	private Button button_bmi;
 	private ImageButton chessman1;
 	private ImageButton chessman2;
 	private ImageButton chessman3;
@@ -37,10 +44,16 @@ public class MainActivity extends Activity
 		findViews();
 
 		// 等待換算按鈕被戳函式
-		CalcSetListeners(ImageButton img_button);
+		CalcSetListeners(chessman1);
 
 		// 等待BMI計算按鈕被戳函式
 		BMISetListeners();
+
+	}
+
+	private void BMISetListeners()
+	{
+		// TODO Auto-generated method stub
 
 	}
 
@@ -71,11 +84,11 @@ public class MainActivity extends Activity
 		// 透過前面宣告的TAG_Calc標籤，方便在CalcSetListeners()涵式中Debug
 		// d=debug 除錯資訊
 		Log.d(TAG_Calc, "Calc Set Listeners");
-		img_button.setOnClickListener(btn);
+//		img_button.setOnClickListener(btn);
 	}
 
 	// 單位換算程式(公斤>磅，公分>英呎)
-	private Button.OnClickListener btn = new Button.OnClickListener()
+/*private Button.OnClickListener btn = new Button.OnClickListener()
 	{
 
 		public void onClick(View V)
@@ -108,11 +121,12 @@ public class MainActivity extends Activity
 				Log.e(TAG_Calc, "Error" + error.toString());
 
 				// 錯誤處理，Toast函式。
-				Toast.makeText(Main.this, R.string.error_msg, Toast.LENGTH_LONG)
-						.show();
+				Toast.makeText(MainActivity.this, R.string.error_msg,
+						Toast.LENGTH_LONG).show();
 			}
 
 		}
 
-	};
+	}; */
+
 }
